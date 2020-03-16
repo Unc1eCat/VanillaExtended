@@ -31,7 +31,7 @@ public class MessageMultiplexingDropperPredicateChange implements IMessage
 	public void fromBytes(ByteBuf buf)
 	{
 		tePos = new BlockPos(buf.readInt(), buf.readInt(), buf.readInt());
-		predicateItem = new String(buf.slice(Integer.SIZE / 8, buf.capacity() - Integer.SIZE / 8).array(), Charsets.UTF_8);
+		predicateItem = new String(buf.copy(Integer.SIZE / 8 * 3, buf.capacity() - Integer.SIZE / 8 * 3).array(), Charsets.UTF_8);
 	}
 	@Override
 	public void toBytes(ByteBuf buf)
@@ -39,7 +39,7 @@ public class MessageMultiplexingDropperPredicateChange implements IMessage
 		buf.writeInt(tePos.getX());
 		buf.writeInt(tePos.getY());
 		buf.writeInt(tePos.getZ());
-		predicateItem.getBytes(Charsets.UTF_8);
+		buf.writeBytes(predicateItem.getBytes(Charsets.UTF_8));
 	}
 	
 	

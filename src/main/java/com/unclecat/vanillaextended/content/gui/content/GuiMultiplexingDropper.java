@@ -57,7 +57,7 @@ public class GuiMultiplexingDropper extends GuiContainer
 		GL11.glPushMatrix();
 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
 		String s = ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).getDisplayName().getUnformattedText();
-		fontRenderer.drawString(s, (width - xSize) / 2 - fontRenderer.getStringWidth(s), 6, 4210752);
+		fontRenderer.drawString(s, (width - xSize) / 2 - fontRenderer.getStringWidth(s), 3, 4210752);
 		if (((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem != null) itemRender.renderItemAndEffectIntoGUI(new ItemStack(((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem), 80, 36);
 		GL11.glPopMatrix();
 	}

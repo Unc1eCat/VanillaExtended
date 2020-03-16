@@ -6,6 +6,10 @@ bin
 .classpath
 .project
 
+# MC
+src/main/resources/assets
+Documentation
+
 # idea
 out
 *.ipr

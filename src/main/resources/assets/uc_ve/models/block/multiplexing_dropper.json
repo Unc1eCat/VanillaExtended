@@ -1,9 +1,9 @@
 {
     "parent": "block/block",
     "textures": {
-        "front": "minecraft:blocks/dropper",
-        "top": "mineccraft:blocks/furnace_top",
-        "side": "miencraft:blocks/furnace_side",
+        "front": "blocks/dropper_front_horizontal",
+        "top": "blocks/furnace_top",
+        "side": "blocks/furnace_side",
         "bottom": "uc_ve:blocks/multiplexing_dropper_bottom"
     },
     
@@ -14,8 +14,8 @@
             "to": [ 16, 16, 16 ],
             "faces":
             {
-                "top": { "texture": "#top", "uv": [ 0, 0, 16, 16 ] },
-                "bottom": { "texture": "#bottom", "uv": [ 0, 0, 16, 16 ] },
+                "up": { "texture": "#top", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#bottom", "uv": [ 0, 0, 16, 16 ] },
                 "north": { "texture": "#front", "uv": [ 0, 0, 16, 16 ] },
                 "south": { "texture": "#side", "uv": [ 0, 0, 16, 16 ] },
                 "west": { "texture": "#side", "uv": [ 0, 0, 16, 16 ] },

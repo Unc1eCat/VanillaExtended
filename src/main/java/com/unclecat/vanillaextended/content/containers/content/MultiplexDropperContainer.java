@@ -68,6 +68,7 @@ public class MultiplexDropperContainer extends Container
 			if (predicateItem != ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem)
 			{
 				i.sendAllContents(this, ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).slots);
+				ModNetWrapper.WRAPPER.sendToServer(new MessageMultiplexingDropperPredicateChange(((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem, ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).getPos()));
 			}
 		}
 		

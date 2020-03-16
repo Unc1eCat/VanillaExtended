@@ -154,7 +154,7 @@ public class MultiplexingDropper extends BlockContainer implements IHasModel
 	@Override
 	public void registerModels()
 	{
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "multiplexing_dropper", "inventory");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, getRegistryName().toString(), "inventory");
 	}
 	
 	
@@ -195,8 +195,8 @@ public class MultiplexingDropper extends BlockContainer implements IHasModel
 		{
 			ItemStack stack = ItemStack.EMPTY;
 			
-			Main.LOGGER.info((world.isRemote ? "CLIENT" : "SERVER") + " " + (predicateItem == null ? "null" : predicateItem.getRegistryName().toString()));
-			ModNetWrapper.WRAPPER.sendToServer(new MessageMultiplexingDropperPredicateChange(predicateItem, pos));
+			//Main.LOGGER.info((world.isRemote ? "CLIENT" : "SERVER") + " " + (predicateItem == null ? "null" : predicateItem.getRegistryName().toString()));
+			//if (world.isRemote) ModNetWrapper.WRAPPER.sendToServer(new MessageMultiplexingDropperPredicateChange(predicateItem, pos));
 			
 			for (int i = 0; i < 5; i++)
 			{
