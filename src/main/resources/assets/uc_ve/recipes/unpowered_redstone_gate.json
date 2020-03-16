@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "STS",
+    "TRT",
+    "STS"
+  ],
+
+  "key": {
+    "S": {
+      "item": "minecraft:stone",
+	  "data": 0
+    },
+	"T": {
+      "item": "minecraft:redstone_torch"
+    },
+	"R": {
+      "item": "minecraft:redstone"
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:unpowered_redstone_gate",
+    "count": 1
+  }
+}

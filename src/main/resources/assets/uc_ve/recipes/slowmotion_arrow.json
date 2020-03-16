@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "L",
+    "O",
+    "I"
+  ],
+
+  "key": {
+    "L": {
+      "item": "minecraft:dye",
+	  "data": 4
+    },
+	"O": {
+      "item": "uc_ve:obsidian_stick"
+    },
+	"I": {
+      "item": "minecraft:ice"
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:slowmotion_arrow",
+    "count": 4
+  }
+}

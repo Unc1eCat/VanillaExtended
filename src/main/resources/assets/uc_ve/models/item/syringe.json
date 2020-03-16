@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+		"layer0": "uc_ve:items/syringe_fill",
+        "layer1": "uc_ve:items/syringe"
+    }
+}

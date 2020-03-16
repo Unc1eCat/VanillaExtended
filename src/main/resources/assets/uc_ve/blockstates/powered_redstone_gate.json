@@ -1,0 +1,101 @@
+{
+    "multipart":
+	[
+		{
+			"when": { "north_inverted": "true", "output_side": "south|east|west" },
+			"apply": { "model": "uc_ve:gate_inverters/north_on" }
+		},
+		{
+			"when": { "south_inverted": "true", "output_side": "east|west|north" },
+			"apply": { "model": "uc_ve:gate_inverters/north_on", "y": 180 }
+		},
+		{
+			"when": { "west_inverted": "true", "output_side": "south|east|north" },
+			"apply": { "model": "uc_ve:gate_inverters/north_on", "y": 270 }
+		},
+		{
+			"when": { "east_inverted": "true", "output_side": "south|west|north" },
+			"apply": { "model": "uc_ve:gate_inverters/north_on", "y": 90 }
+		},
+		
+		{
+			"when": { "north_inverted": "false", "output_side": "south|east|west" },
+			"apply": { "model": "uc_ve:gate_inverters/north_off" }
+		},
+		{
+			"when": { "south_inverted": "false", "output_side": "east|west|north" },
+			"apply": { "model": "uc_ve:gate_inverters/north_off", "y": 180 }
+		},
+		{
+			"when": { "west_inverted": "false", "output_side": "south|east|north" },
+			"apply": { "model": "uc_ve:gate_inverters/north_off", "y": 270 }
+		},
+		{
+			"when": { "east_inverted": "false", "output_side": "south|west|north" },
+			"apply": { "model": "uc_ve:gate_inverters/north_off", "y": 90 }
+		},
+		
+		
+		{
+			"when": { "north_inverted": "true", "output_side": "north" },
+			"apply": { "model": "uc_ve:gate_inverters/north_out_on" }
+		},
+		{
+			"when": { "south_inverted": "true", "output_side": "south" },
+			"apply": { "model": "uc_ve:gate_inverters/north_out_on", "y": 180 }
+		},
+		{
+			"when": { "west_inverted": "true", "output_side": "west" },
+			"apply": { "model": "uc_ve:gate_inverters/north_out_on", "y": 270 }
+		},
+		{
+			"when": { "east_inverted": "true", "output_side": "east" },
+			"apply": { "model": "uc_ve:gate_inverters/north_out_on", "y": 90 }
+		},
+		
+		{
+			"when": { "north_inverted": "false", "output_side": "north" },
+			"apply": { "model": "uc_ve:gate_inverters/north_out_off" }
+		},
+		{
+			"when": { "south_inverted": "false", "output_side": "south" },
+			"apply": { "model": "uc_ve:gate_inverters/north_out_off", "y": 180 }
+		},
+		{
+			"when": { "west_inverted": "false", "output_side": "west" },
+			"apply": { "model": "uc_ve:gate_inverters/north_out_off", "y": 270 }
+		},
+		{
+			"when": { "east_inverted": "false", "output_side": "east" },
+			"apply": { "model": "uc_ve:gate_inverters/north_out_off", "y": 90 }
+		},
+		
+		
+		{
+			"when": 
+			{
+				"OR":
+				[
+					{"output_side": "north", "north_inverted": "true"},
+					{"output_side": "west", "west_inverted": "true"},
+					{"output_side": "east", "east_inverted": "true"},
+					{"output_side": "south", "south_inverted": "true"}
+				]
+			},
+			"apply": {"model": "uc_ve:unpowered_redstone_gate"}
+		},
+		{
+			"when": 
+			{
+				"OR":
+				[
+					{"output_side": "north", "north_inverted": "false"},
+					{"output_side": "west", "west_inverted": "false"},
+					{"output_side": "east", "east_inverted": "false"},
+					{"output_side": "south", "south_inverted": "false"}
+				]
+			},
+			"apply": {"model": "uc_ve:powered_redstone_gate"}
+		}
+	]
+}

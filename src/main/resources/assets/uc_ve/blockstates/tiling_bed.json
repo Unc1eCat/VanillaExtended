@@ -1,0 +1,207 @@
+{
+	"multipart":
+	[
+	   {
+	       "when": { "north_border": "true", "west_border": "true" },
+	       "apply": { "model": "uc_ve:tiling_bed/legs" }
+	   },
+	   {
+           "when": { "north_border": "true", "east_border": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/legs", "y": 90 }
+       },
+       {
+           "when": { "south_border": "true", "east_border": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/legs", "y": 180 }
+       },
+       {
+           "when": { "south_border": "true", "west_border": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/legs", "y": 270 }
+       },
+	   
+	   
+	   
+	   
+	   
+	   
+	   {
+	       "__comment": "WITHOUT pillow",
+	       
+	       "__comment": "inside",
+	       "when": { "north_border": "true", "west_border": "true", "south_border": "true", "east_border": "true", "pillow": "false" },
+	       "apply": { "model": "uc_ve:tiling_bed/inside" }
+	   },
+	   {        
+           "__comment": "borderless",
+           "when": { "north_border": "false", "west_border": "false", "south_border": "false", "east_border": "false", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/no_sides" }
+       },
+       
+	   
+	   
+	   
+	   {
+	       "__comment": "u-shaped",
+           "when": { "north_border": "false", "west_border": "true", "south_border": "true", "east_border": "true", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/u_shaped" }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "false", "south_border": "true", "east_border": "true", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/u_shaped", "y": 270 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "true", "south_border": "false", "east_border": "true", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/u_shaped", "y": 180 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "true", "south_border": "true", "east_border": "false", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/u_shaped", "y": 90 }
+       },
+       
+       
+       
+       {
+           "__comment": "opposite borders",
+           "when": { "north_border": "false", "west_border": "true", "south_border": "false", "east_border": "true", "facing": "south", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/opposite_sides" }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "false", "south_border": "true", "east_border": "false", "facing": "west", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/opposite_sides", "y": 90 }
+       },
+       {
+           "when": { "north_border": "false", "west_border": "true", "south_border": "false", "east_border": "true", "facing": "north", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/opposite_sides", "y": 180 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "false", "south_border": "true", "east_border": "false", "facing": "east", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/opposite_sides", "y": 270 }
+       },
+       
+      
+       
+       {
+           "__comment": "corner",
+           "when": { "north_border": "false", "west_border": "false", "south_border": "true", "east_border": "true", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/corner", "y": 180 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "false", "south_border": "false", "east_border": "true", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/corner", "y": 90 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "true", "south_border": "false", "east_border": "false", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/corner" }
+       },
+       {
+           "when": { "north_border": "false", "west_border": "true", "south_border": "true", "east_border": "false", "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/corner", "y": 270 }
+       },
+       
+       
+       
+       
+       {
+           "__comment": "one border",
+           "when": { "north_border": "false", "west_border": "false", "south_border": "false", "east_border": "true",   "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/one_side", "y": 270 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "false", "south_border": "false", "east_border": "false",    "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/one_side", "y": 180 }
+       },
+       {
+           "when": { "north_border": "false", "west_border": "true", "south_border": "false", "east_border": "false",    "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/one_side", "y": 90 }
+       },
+       {
+           "when": { "north_border": "false", "west_border": "false", "south_border": "true", "east_border": "false",    "pillow": "false" },
+           "apply": { "model": "uc_ve:tiling_bed/one_side" }
+       },
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       {
+           "__comment": "WITH pillow",
+           "__comment": "u-shaped",
+           "when": { "north_border": "false", "west_border": "true", "south_border": "true", "east_border": "true", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_u_shaped_mir", "y": 180 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "false", "south_border": "true", "east_border": "true", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_u_shaped_mir", "y": 90 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "true", "south_border": "false", "east_border": "true", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_u_shaped" }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "true", "south_border": "true", "east_border": "false", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_u_shaped", "y": 270 }
+       },
+
+       
+      
+       
+       {
+           "__comment": "corner",
+           "when": { "north_border": "false", "west_border": "false", "south_border": "true", "east_border": "true", "facing": "south", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_corner", "y": 180 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "false", "south_border": "false", "east_border": "true", "facing": "north", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_corner_mir" }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "true", "south_border": "false", "east_border": "false", "facing": "north", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_corner" }
+       },
+       {
+           "when": { "north_border": "false", "west_border": "true", "south_border": "true", "east_border": "false", "facing": "south", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_corner_mir", "y": 180 }
+       },
+       {
+           "when": { "north_border": "false", "west_border": "false", "south_border": "true", "east_border": "true", "facing": "east", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_corner_mir", "y": 90 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "false", "south_border": "false", "east_border": "true", "facing": "east", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_corner", "y": 90 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "true", "south_border": "false", "east_border": "false", "facing": "west", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_corner_mir", "y": 270 }
+       },
+       {
+           "when": { "north_border": "false", "west_border": "true", "south_border": "true", "east_border": "false", "facing": "west", "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_corner", "y": 270 }
+       },
+       
+       
+       
+       
+       {
+           "__comment": "one border",
+           "when": { "north_border": "false", "west_border": "false", "south_border": "false", "east_border": "true",   "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_one_side", "y": 90 }
+       },
+       {
+           "when": { "north_border": "true", "west_border": "false", "south_border": "false", "east_border": "false",    "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_one_side" }
+       },
+       {
+           "when": { "north_border": "false", "west_border": "true", "south_border": "false", "east_border": "false",    "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_one_side", "y": 270 }
+       },
+       {
+           "when": { "north_border": "false", "west_border": "false", "south_border": "true", "east_border": "false",    "pillow": "true" },
+           "apply": { "model": "uc_ve:tiling_bed/pillow_one_side", "y": 90 }
+       }    
+	]
+}

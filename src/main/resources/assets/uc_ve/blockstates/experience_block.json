@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "condensed=false": { "model": "uc_ve:experience_block" },
+	 "condensed=true": { "model": "uc_ve:experience_block_condensed" }
+  }
+}

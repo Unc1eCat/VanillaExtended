@@ -1,0 +1,5 @@
+{
+    "variants": {
+		"normal": { "model": "uc_ve:instant_tnt" }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "facing=north": { "model": "uc_ve:block_laser_ray"  },
+	"facing=south": { "model": "uc_ve:block_laser_ray", "y": 180 },
+	"facing=east": { "model": "uc_ve:block_laser_ray", "y": 90},
+	"facing=west": { "model": "uc_ve:block_laser_ray", "y": 90 },
+	"facing=up": { "model": "uc_ve:block_laser_ray", "z": 90 },
+	"facing=down": { "model": "uc_ve:block_laser_ray", "z": 90 }
+	
+  }
+}

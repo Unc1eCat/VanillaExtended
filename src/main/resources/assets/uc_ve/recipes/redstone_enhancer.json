@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "R",
+    "G",
+    "S"
+  ],
+
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+	"G": {
+      "item": "minecraft:gold_ingot"
+    },
+	"S": {
+      "item": "minecraft:stone_slab",
+	  "data": 0
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:redstone_enhancer",
+    "count": 1
+  }
+}

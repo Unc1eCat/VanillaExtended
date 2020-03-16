@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "R",
+    "R"
+  ],
+
+  "key": {
+    "R": {
+      "item": "minecraft:obsidian"
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:obsidian_stick",
+    "count": 2
+  }
+}

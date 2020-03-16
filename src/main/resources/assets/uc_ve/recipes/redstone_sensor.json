@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "SRS",
+    "RPR",
+    "SRS"
+  ],
+
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+	"P": {
+      "item": "minecraft:light_weighted_pressure_plate"
+    },
+	"S": {
+      "item": "minecraft:stone",
+      "data": 0
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:redstone_sensor",
+    "count": 1
+  }
+}

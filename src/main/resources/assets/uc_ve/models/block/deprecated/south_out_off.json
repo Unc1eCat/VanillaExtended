@@ -1,0 +1,24 @@
+{
+	"parent":"block/block",
+	
+	"textures":
+	{
+		"img": "uc_ve:blocks/redstone_gate_inverters"
+	},
+	
+	"elements":
+	[
+		{
+			"from": [6, 2, 11],
+			"to":	[10, 4, 15],
+			"faces":
+			{
+				"north": { "uv":[0, 5, 4, 6],"texture":"#img" },
+				"west": { "uv":[0, 5, 4, 6], "texture":"#img" },
+				"south": { "uv":[0, 5, 4, 6], "texture":"#img" },
+				"east": { "uv":[0, 5, 4, 6], "texture":"#img" },
+				"up": { "uv":[0, 0, 4, 4], "texture":"#img" }
+			}
+		}
+	]
+}

@@ -1,0 +1,47 @@
+# Items
+item.cloth.name=Ткань
+item.obsidian_stick.name=Обсидиановая палка
+item.hero_sword.name=Меч героя
+item.exploding_arrow.name=Взрывающаяся стрела
+item.slowmotion_arrow.name=Замедленная стрела
+item.extinguisher.name=Огнетушитель
+item.ore_finder.name=Рудоискатель
+item.ore_finder.noOreBound=Руда не привязана
+item.charging_pickaxe.name=Заряжаемый разрушитель
+item.charging_pickaxe.noBlockBound=Нет заряда
+
+
+# Container
+container.multiplexing_dropper=Воронко-выбрасыватель
+
+
+# Enchantments
+enchantment.wandspell_fireball=Заклинание огненный шар
+enchantment.wandspell_power_push=Заклинание силовое отталкивание
+enchantment.wandspell_teleportation=Заклинание телепортация
+enchantment.wandspell_floating=Заклинание полёт
+enchantment.wandspell_ray=Заклинание луч
+enchantment.wandspell_soul_extraсtor=Заклинание высасыватель душ
+enchantment.wandspell_builder=Заклинание строительство
+enchantment.wandspell_force_shield=Заклинание энергетический купол
+enchantment.wandspell_luminosity=Заклинание осветитель
+enchantment.wandspell_experience_placer=Заклинание сжиматель опыта 
+
+
+# Blocks(tiles)
+tile.multiplexing_dropper.name=Multiplexing hopper
+tile.redstone_sensor.name=Редстоуновый сенсор
+tile.force_block.name=Блок силового поля
+tile.luminous_block.name=Светящийся блок
+tile.cotton_wool_block.name=Блок ваты
+tile.xpore_nether.name=Руда опыта нижнего мира
+tile.xpore_overworld.name=Руда опыта
+tile.xpore_end.name=Руда опыта края
+tile.feather_block.name=Блок перьев
+tile.tiling_bed.name=Плитка-кровать
+tile.experience_block.name=Блок опыта
+tile.instant_tnt.name=Моментальный динамит
+tile.unpowered_block_of_repeaters.name=Блок повторителей
+tile.unpowered_redstone_gate.name=Редстоун гейт
+tile.redstone_enhancer.name=Усилитель редстоун сигнала
+tile.redstone_laser.name=Редстоун лазер

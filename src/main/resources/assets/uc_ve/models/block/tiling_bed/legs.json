@@ -1,0 +1,22 @@
+{
+    "parent": "block/block",
+    "textures": {
+        "particle": "uc_ve:blocks/tiling_bed/opposite_sides",
+        "legs": "uc_ve:blocks/tiling_bed/side_u_shaped_and_legs"
+    },
+    "elements": 
+    [
+        {  
+            "from": [ 0, 0, 0 ],
+            "to": [ 3, 3, 3 ],
+            "faces": {
+                "down":     { "uv": [6, 0, 9, 3], "texture": "#legs" },
+                "up":       { "uv": [3, 0, 6, 3], "texture": "#legs" },
+                "north":    { "uv": [0, 3, 3, 6], "texture": "#legs" },
+                "west":     { "uv": [3, 3, 6, 6], "texture": "#legs" },
+                "south":    { "uv": [6, 3, 9, 6], "texture": "#legs" },
+                "east":     { "uv": [9, 3, 12, 6], "texture": "#legs" } 
+            }
+        }
+    ]
+}

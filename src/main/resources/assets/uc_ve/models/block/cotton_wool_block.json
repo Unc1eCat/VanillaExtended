@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "uc_ve:blocks/cotton_wool_block"
+  }
+}

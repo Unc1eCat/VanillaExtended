@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+
+  "key": {
+    "R": {
+      "item": "minecraft:repeater"
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:unpowered_block_of_repeaters",
+    "count": 1
+  }
+}

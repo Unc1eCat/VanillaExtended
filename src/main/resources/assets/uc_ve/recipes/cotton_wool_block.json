@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "R R",
+    " W ",
+    "R R"
+  ],
+
+  "key": {
+    "W": {
+      "item": "minecraft:wool",
+	  "data": 0
+    },
+	"R": {
+	  "item": "minecraft:string"
+	}
+  },
+
+  "result": {
+    "item": "uc_ve:cotton_wool_block",
+    "count": 2
+  }
+}

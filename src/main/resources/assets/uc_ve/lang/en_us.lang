@@ -1,0 +1,52 @@
+# Items
+item.cloth.name=Cloth
+item.obsidian_stick.name=Obsidian stick
+item.holy_sword.name=Holy sword
+item.waffle.name=Waffle
+item.syringe.name=Syringe
+item.exploding_arrow.name=Explosive arrow
+item.slowmotion_arrow.name=Slow motion arrow
+item.extinguisher.name=Fire extinguisher
+item.ore_finder.name=Ore finder
+item.ore_finder.noOreBound=No ore bound
+item.charging_pickaxe.name=Charging breaker
+item.charging_pickaxe.noBlockBound=No charge
+
+
+# Container
+container.multiplexing_dropper=Hopper-dropper
+
+
+# Enchantments
+enchantment.wandspell_fireball=Fire ball spell
+enchantment.wandspell_power_push=Power push spell
+enchantment.wandspell_teleportation=Teleportation spell
+enchantment.wandspell_floating=Floating spell
+enchantment.wandspell_ray=Ray spell
+enchantment.wandspell_soul_extractor=Soul extractor spell
+enchantment.wandspell_builder=Builder spell
+enchantment.wandspell_force_shield=Force shield spell
+enchantment.wandspell_luminosity=Luminosity spell
+enchantment.wandspell_experience_placer=Experience compressor  
+
+
+# Blocks(tiles)
+tile.multiplexing_dropper.name=Hopper-dropper
+tile.redstone_sensor.name=Redstone sensor
+tile.force_block.name=Force block
+tile.cotton_wool_block.name=Cotton wool block
+tile.ore_xp_nether.name=Experience nether ore
+tile.ore_xp_overworld.name=Experience ore
+tile.ore_xp_end.name=Experience end ore
+tile.feather_block.name=Feather block
+tile.luminous_block.name=Luminous block
+tile.tiling_bed.name=Bed tile
+tile.tiling_bed.need_more_tiles=Bed is too small, place more tiling beds near this
+tile.instant_tnt.name=Instant TNT
+tile.experience_block.name=Experience block
+tile.experience_block_condensed.name=Condensed experience block
+tile.unpowered_block_of_repeaters.name=Repeaters block
+tile.unpowered_redstone_gate.name=Redstone gate
+tile.redstone_enhancer.name=Redstone enhancer
+tile.redstone_laser.name=Redstone laser
+tile.waffle_block.name=Waffle block

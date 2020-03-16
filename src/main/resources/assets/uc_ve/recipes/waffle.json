@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "W W",
+    "SMS",
+    "E E"
+  ],
+
+  "key": {
+    "W": {
+      "item": "minecraft:wheat"
+    },
+	"S": {
+      "item": "minecraft:sugar"
+    },
+	"E": {
+      "item": "minecraft:egg"
+    },
+	"M": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:waffle",
+    "count": 8
+  }
+}

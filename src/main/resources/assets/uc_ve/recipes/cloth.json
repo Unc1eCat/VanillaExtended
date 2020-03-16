@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+
+  "key": {
+    "R": {
+      "item": "minecraft:string"
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:cloth",
+    "count": 1
+  }
+}

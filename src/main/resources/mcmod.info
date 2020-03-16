@@ -1,0 +1,16 @@
+[
+{
+  "modid": "uc_ve",
+  "name": "Vanilla Extended",
+  "description": "Adds some features that solves general problems. Some of these features are vanilla-styled.",
+  "version": "Alpha",
+  "mcversion": "1.12.2",
+  "url": "https://www.reddit.com/user/AntonBespoiasov",
+  "updateUrl": "",
+  "authorList": ["Uncle Cat"],
+  "credits": "Developer, English and Russian localization - Uncle Cat;\nInspirators - cool dudes on Reddit that play Minecraft not Fortnite",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

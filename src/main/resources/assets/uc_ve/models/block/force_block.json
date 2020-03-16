@@ -1,0 +1,7 @@
+{ 
+  "parent": "block/cube_all",
+  
+  "textures": {
+    "all": "uc_ve:blocks/force_block"
+  }
+}

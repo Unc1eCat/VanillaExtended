@@ -1,0 +1,52 @@
+{ 
+  "parent":"block/block",
+  "textures": 
+  {
+    "particle": "uc_ve:blocks/redstone_enhancer_on",
+	"top": "uc_ve:blocks/redstone_enhancer_on",
+	"side": "minecraft:blocks/stone_slab_top"
+  },
+  
+  "elements":
+  [
+	{
+		"from": [3, 0, 3 ],
+		"to": 	[13, 2, 16],
+		"faces":
+		{	
+			"up": { "texture": "#top", "uv": [0, 3, 10, 16] },
+			"north": { "texture": "#side" },
+			"south": { "texture": "#side" },
+			"east": { "texture": "#side" },
+			"west": { "texture": "#side" },
+			"down": { "texture": "#side"}
+		}
+	},
+	
+	{
+        "from": [4, 0, 1 ],
+        "to":   [12, 2, 3],
+        "faces":
+        {   
+            "up": { "texture": "#top", "uv": [1, 1, 9, 3] },
+            "north": { "texture": "#side" },
+            "east": { "texture": "#side" },
+            "west": { "texture": "#side" },
+            "down": { "texture": "#side" }
+        }
+    },
+    
+    {
+        "from": [5, 0, 0 ],
+        "to":   [11, 2, 1],
+        "faces":
+        {   
+            "up": { "texture": "#top", "uv": [2, 0, 8, 1] },
+            "north": { "texture": "#side" },
+            "east": { "texture": "#side" },
+            "west": { "texture": "#side" },
+            "down": { "texture": "#side" }
+        }
+    }
+  ]
+}

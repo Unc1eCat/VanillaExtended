@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "EBE",
+    "ESE",
+    " S "
+  ],
+
+  "key": {
+    "S": {
+      "item": "uc_ve:obsidian_stick"
+    },
+	"B": {
+      "item": "minecraft:beacon"
+    },
+	"E": {
+      "item": "minecraft:emerald"
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:charging_breaker",
+    "count": 1
+  }
+}

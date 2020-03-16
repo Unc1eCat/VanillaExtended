@@ -1,0 +1,30 @@
+{
+"parent": "block/block",
+"textures": {
+		"particles": "uc_ve:blocks/laser_ray",
+        "side": "uc_ve:blocks/laser_ray"
+    },
+	"elements":
+	[
+		{
+		   "from": [ 2, 2, 0 ],
+			"to": [ 14, 14, 0 ],
+			"faces": {
+				"down":  { "texture": "#side", "cullface": "down" },
+				"west":  { "texture": "#side", "cullface": "west" },
+				"east":  { "texture": "#side", "cullface": "east" },
+				"up":  { "texture": "#side", "cullface": "up" }
+			}
+		},
+		
+		{
+		   "from": [ 5, 5, 0 ],
+			"to": [ 11, 11, 0 ],
+			"faces": {
+				"down":  { "texture": "#side", "cullface": "down" },
+				"west":  { "texture": "#side", "cullface": "west" },
+				"east":  { "texture": "#side", "cullface": "east" },
+				"up":  { "texture": "#side", "cullface": "up" }
+			}
+		}
+}

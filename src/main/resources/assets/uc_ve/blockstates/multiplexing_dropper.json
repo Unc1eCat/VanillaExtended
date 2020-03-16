@@ -1,0 +1,13 @@
+{
+  "variants": 
+  {
+    "facing=north,triggered=false": { "model": "uc_ve:multiplexing_dropper" },
+	"facing=south,triggered=false": { "model": "uc_ve:multiplexing_dropper", "y": 180 },
+	"facing=east,triggered=false": { "model": "uc_ve:multiplexing_dropper", "y": 90 },
+	"facing=west,triggered=false": { "model": "uc_ve:multiplexing_dropper", "y": 270 },
+	"facing=north,triggered=true": { "model": "uc_ve:multiplexing_dropper" },
+    "facing=south,triggered=true": { "model": "uc_ve:multiplexing_dropper", "y": 180 },
+    "facing=east,triggered=true": { "model": "uc_ve:multiplexing_dropper", "y": 90 },
+    "facing=west,triggered=true": { "model": "uc_ve:multiplexing_dropper", "y": 270 }
+  }
+}

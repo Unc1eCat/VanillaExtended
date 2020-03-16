@@ -1,0 +1,9 @@
+{
+	"variants":
+	{
+		"bites=0": { "model": "uc_ve:waffle_block_0" },
+		"bites=1": { "model": "uc_ve:waffle_block_1" },
+		"bites=2": { "model": "uc_ve:waffle_block_2" },
+		"bites=3": { "model": "uc_ve:waffle_block_3" }
+	}
+}

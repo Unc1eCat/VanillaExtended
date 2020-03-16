@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "T",
+    "O",
+    "F"
+  ],
+
+  "key": {
+    "T": {
+      "item": "minecraft:tnt"
+    },
+	"O": {
+      "item": "uc_ve:obsidian_stick"
+    },
+	"F": {
+      "item": "minecraft:feather"
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:exploding_arrow",
+    "count": 4
+  }
+}

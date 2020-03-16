@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "uc_ve:blocks/instant_tnt_bottom",
+        "top": "uc_ve:blocks/instant_tnt_top",
+        "side": "uc_ve:blocks/instant_tnt_side"
+    }
+}

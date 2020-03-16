@@ -1,0 +1,22 @@
+{
+    "textures":
+    {
+        "torch": "uc_ve:blocks/redstone_dot_on"
+    },
+    
+    "elements":
+    [
+        {
+            "from": [ 10, 14, 4 ],
+            "to": [ 12, 16, 6 ],
+            "faces":
+            {
+                "up": { "texture": "#torch", "uv": [0, 0, 2, 2] },
+                "north": { "texture": "#torch", "uv": [0, 0, 2, 2] },
+                "west": { "texture": "#torch", "uv": [0, 0, 2, 2] },
+                "south": { "texture": "#torch", "uv": [0, 0, 2, 2] },
+                "east": { "texture": "#torch", "uv": [0, 0, 2, 2] }
+            }
+        }
+    ]
+}

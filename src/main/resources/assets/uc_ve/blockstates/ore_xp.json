@@ -1,0 +1,8 @@
+{
+	"variants":
+	{
+		"dimension=nether": { "model": "uc_ve:ore_xp_nether" },
+		"dimension=overworld": { "model": "uc_ve:ore_xp_overworld" },
+		"dimension=end": { "model": "uc_ve:ore_xp_end" }
+	}
+}

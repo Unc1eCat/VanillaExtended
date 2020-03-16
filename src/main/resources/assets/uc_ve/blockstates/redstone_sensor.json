@@ -1,0 +1,18 @@
+{
+  "variants": 
+  {
+    "facing=north,powered=true": { "model": "uc_ve:redstone_sensor_on", "x": 90 },
+	"facing=south,powered=true": { "model": "uc_ve:redstone_sensor_on", "x": 270 },
+	"facing=east,powered=true": { "model": "uc_ve:redstone_sensor_on", "x": 90, "y": 90 },
+	"facing=west,powered=true": { "model": "uc_ve:redstone_sensor_on", "x": 90, "y": 270 },
+	"facing=up,powered=true": { "model": "uc_ve:redstone_sensor_on" },
+	"facing=down,powered=true": { "model": "uc_ve:redstone_sensor_on", "x": 180 },
+	
+	"facing=north,powered=false": { "model": "uc_ve:redstone_sensor_off", "x": 90 },
+	"facing=south,powered=false": { "model": "uc_ve:redstone_sensor_off", "x": 270 },
+	"facing=east,powered=false": { "model": "uc_ve:redstone_sensor_off", "x": 90, "y": 90},
+	"facing=west,powered=false": { "model": "uc_ve:redstone_sensor_off", "x": 90, "y": 270 },
+	"facing=up,powered=false": { "model": "uc_ve:redstone_sensor_off" },
+	"facing=down,powered=false": { "model": "uc_ve:redstone_sensor_off", "x": 180 }
+  }
+}

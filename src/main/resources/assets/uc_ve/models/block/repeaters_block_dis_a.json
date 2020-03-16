@@ -1,0 +1,22 @@
+{
+    "textures":
+    {
+        "bedrock": "minecraft:blocks/bedrock"
+    },
+    
+    "elements":
+    [
+        {
+            "from": [ 4, 14, 10 ],
+            "to": [ 6, 16, 14 ],
+            "faces":
+            {
+                "up": { "texture": "#bedrock", "uv": [0, 0, 2, 4] },
+                "north": { "texture": "#bedrock", "uv": [0, 0, 2, 2] },
+                "west": { "texture": "#bedrock", "uv": [0, 0, 4, 2] },
+                "south": { "texture": "#bedrock", "uv": [0, 0, 2, 2] },
+                "east": { "texture": "#bedrock", "uv": [0, 0, 4, 2] }
+            }
+        }
+    ]
+}

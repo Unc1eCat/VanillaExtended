@@ -1,0 +1,18 @@
+{
+  "parent": "uc_ve:block/redstone_enhancer_off",
+
+  "display": 
+  {
+    "firstperson_righthand":
+    {
+        "translation": [8, 0, -12],
+        "rotation": [20, -15, 0]
+    },
+    "gui": 
+    {
+        "rotation": [ 30, -25, 0 ],
+        "translation": [ 1, 4, 0 ],
+        "scale":[ 0.875, 0.875, 0.875 ]
+    }
+  }
+}

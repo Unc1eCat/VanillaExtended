@@ -1,0 +1,19 @@
+{
+    "parent": "block/block",
+	"textures": {
+        "particle": "uc_ve:blocks/tiling_bed/opposite_sides",
+		"top": "uc_ve:blocks/tiling_bed/borderless",
+		"bottom": "uc_ve:blocks/tiling_bed/bottom"
+	},
+	"elements": 
+	[
+        {  
+			"from": [ 0, 3, 0 ],
+            "to": [ 16, 9, 16 ],
+            "faces": {
+                "down":  	{ "uv": [0, 0, 16, 16], "texture": "#bottom" },
+                "up":    	{ "uv": [0, 0, 16, 16], "texture": "#top" }
+            }
+        }
+	]
+}

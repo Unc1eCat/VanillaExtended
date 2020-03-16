@@ -1,0 +1,2 @@
+Slow motion arrow: fixed distance calculation math
+Ore finder: added

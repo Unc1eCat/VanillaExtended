@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "SCS",
+    "OCO",
+    "SHS"
+  ],
+
+  "key": {
+    "S": {
+      "item": "uc_ve:obsidian_stick"
+    },
+	"H": {
+      "item": "minecraft:diamond_block"
+    },
+	"C": {
+      "item": "minecraft:compass"
+    },
+	"O": {
+      "item": "minecraft:observer"
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:ore_finder",
+    "count": 1
+  }
+}

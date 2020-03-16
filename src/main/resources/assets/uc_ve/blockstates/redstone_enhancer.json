@@ -1,0 +1,585 @@
+{
+    "multipart": 
+    [
+        {
+            "when": { "facing": "south", "power": 0 },
+            "apply": { "model": "uc_ve:redstone_enhancer_off" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 0 },
+            "apply": { "model": "uc_ve:redstone_enhancer_off", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 0 },
+            "apply": { "model": "uc_ve:redstone_enhancer_off", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 0 },
+            "apply": { "model": "uc_ve:redstone_enhancer_off", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 1 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 1 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 1 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 1 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 2 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 2 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 2 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 2 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 3 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 3 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 3 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 3 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 4 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 4 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 4 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 4 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 5 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 5 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 5 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 5 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 6 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 6 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 6 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 6 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 7 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 7 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 7 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 7 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 8 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 8 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 8 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 8 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 9 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 9 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 9 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 9 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 10 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 10 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 10 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 10 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 11 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 11 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 11 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 11 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 12 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 12 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 12 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 12 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 13 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 13 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 13 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 13 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 14 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 14 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 14 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 14 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 15 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 15 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 15 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 15 },
+            "apply": { "model": "uc_ve:redstone_enhancer_on", "y": 90 } 
+        },
+        
+        
+        
+        
+        
+        
+        
+        
+        {
+            "when": { "facing": "south", "power": 0, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_off" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 0, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_off", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 0, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_off", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 0, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_off", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 1, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 1, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 1, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 1, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 2, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 2, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 2, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 2, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 3, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 3, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 3, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 3, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 4, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 4, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 4, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 4, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 5, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 5, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 5, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 5, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 6, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 6, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 6, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 6, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 7, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 7, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 7, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 7, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 8, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 8, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 8, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 8, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 9, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 9, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 9, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 9, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 10, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 10, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 10, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 10, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 11, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 11, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 11, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 11, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 12, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 12, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 12, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 12, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 13, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 13, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 13, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 13, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 14, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 14, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 14, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 14, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        },
+     
+        
+        {
+            "when": { "facing": "south", "power": 15, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on" } 
+        },  
+        {
+            "when": { "facing": "east", "power": 15, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 270 } 
+        },
+        {
+            "when": { "facing": "north", "power": 15, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 180 } 
+        },
+        {
+            "when": { "facing": "west", "power": 15, "subtract_mode": "true" },
+            "apply": { "model": "uc_ve:redstone_enhancer_bulge_on", "y": 90 } 
+        }
+    ]
+}

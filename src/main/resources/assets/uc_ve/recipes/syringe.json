@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "  D",
+    " B ",
+    "I  "
+  ],
+
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+	"B": {
+      "item": "minecraft:glass_bottle"
+    },
+	"I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+
+  "result": {
+    "item": "uc_ve:syringe",
+    "count": 1
+  }
+}

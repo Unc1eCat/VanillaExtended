@@ -1,0 +1,6 @@
+{ 
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "uc_ve:blocks/experience_block_condensed"
+  }
+}

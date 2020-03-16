@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": 
+  [
+    "RR",
+    "RR"
+  ],
+
+  "key": 
+  {
+    "R": 
+	{
+      "item": "uc_ve:waffle"
+    }
+  },
+
+  "result": 
+  {
+    "item": "uc_ve:waffle_block",
+    "count": 1
+  }
+}

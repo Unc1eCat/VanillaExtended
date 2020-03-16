@@ -1,0 +1,45 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "uc_ve:items/ore_finder/no"
+  },
+   
+  "overrides": 
+  [
+    { "predicate": { "angle": 0.000000 }, "model": "uc_ve:item/ore_finder/24" },
+    { "predicate": { "angle": 0.015625 }, "model": "uc_ve:item/ore_finder/25" },
+    { "predicate": { "angle": 0.046875 }, "model": "uc_ve:item/ore_finder/26" },
+    { "predicate": { "angle": 0.078125 }, "model": "uc_ve:item/ore_finder/27" },
+    { "predicate": { "angle": 0.109375 }, "model": "uc_ve:item/ore_finder/28" },
+    { "predicate": { "angle": 0.140625 }, "model": "uc_ve:item/ore_finder/29" },
+    { "predicate": { "angle": 0.171875 }, "model": "uc_ve:item/ore_finder/30" },
+    { "predicate": { "angle": 0.203125 }, "model": "uc_ve:item/ore_finder/31" },
+    { "predicate": { "angle": 0.234375 }, "model": "uc_ve:item/ore_finder/0" },
+    { "predicate": { "angle": 0.265625 }, "model": "uc_ve:item/ore_finder/0" },
+    { "predicate": { "angle": 0.296875 }, "model": "uc_ve:item/ore_finder/1" },
+    { "predicate": { "angle": 0.328125 }, "model": "uc_ve:item/ore_finder/2" },
+    { "predicate": { "angle": 0.359375 }, "model": "uc_ve:item/ore_finder/3" },
+    { "predicate": { "angle": 0.390625 }, "model": "uc_ve:item/ore_finder/4" },
+    { "predicate": { "angle": 0.421875 }, "model": "uc_ve:item/ore_finder/5" },
+    { "predicate": { "angle": 0.453125 }, "model": "uc_ve:item/ore_finder/6" },
+    { "predicate": { "angle": 0.484375 }, "model": "uc_ve:item/ore_finder/7" },
+    { "predicate": { "angle": 0.515625 }, "model": "uc_ve:item/ore_finder/8" },
+    { "predicate": { "angle": 0.546875 }, "model": "uc_ve:item/ore_finder/9" },
+    { "predicate": { "angle": 0.578125 }, "model": "uc_ve:item/ore_finder/10" },
+    { "predicate": { "angle": 0.609375 }, "model": "uc_ve:item/ore_finder/11" },
+    { "predicate": { "angle": 0.640625 }, "model": "uc_ve:item/ore_finder/12" },
+    { "predicate": { "angle": 0.671875 }, "model": "uc_ve:item/ore_finder/13" },
+    { "predicate": { "angle": 0.703125 }, "model": "uc_ve:item/ore_finder/14" },
+    { "predicate": { "angle": 0.734375 }, "model": "uc_ve:item/ore_finder/15" },
+    { "predicate": { "angle": 0.765625 }, "model": "uc_ve:item/ore_finder/16" },
+    { "predicate": { "angle": 0.796875 }, "model": "uc_ve:item/ore_finder/17" },
+    { "predicate": { "angle": 0.828125 }, "model": "uc_ve:item/ore_finder/18" },
+    { "predicate": { "angle": 0.859375 }, "model": "uc_ve:item/ore_finder/19" },
+    { "predicate": { "angle": 0.890625 }, "model": "uc_ve:item/ore_finder/20" },
+    { "predicate": { "angle": 0.921875 }, "model": "uc_ve:item/ore_finder/21" },
+    { "predicate": { "angle": 0.953125 }, "model": "uc_ve:item/ore_finder/22" },
+    { "predicate": { "angle": 0.984375 }, "model": "uc_ve:item/ore_finder/23" },
+    { "predicate": { "angle": 0.999999 }, "model": "uc_ve:item/ore_finder" },
+    { "predicate": { "angle": 1.0 }, "model": "uc_ve:item/ore_finder/void" }
+  ]
+}
