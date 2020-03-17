@@ -1,14 +1,13 @@
 package com.unclecat.vanillaextended.content.blocks.content;
 
+import com.google.common.base.Predicate;
 import com.unclecat.vanillaextended.content.blocks.BlockBase;
 import com.unclecat.vanillaextended.content.containers.content.MultiplexDropperContainer;
 import com.unclecat.vanillaextended.content.gui.GuiHandler.GUIS;
 import com.unclecat.vanillaextended.main.Main;
 import com.unclecat.vanillaextended.main.References;
 import com.unclecat.vanillaextended.utils.IHasModel;
-import com.unclecat.vanillaextended.utils.ModNetWrapper;
 import com.unclecat.vanillaextended.utils.helpers.ItemsManagementHelper;
-import com.unclecat.vanillaextended.utils.messages.MessageMultiplexingDropperPredicateChange;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
@@ -26,7 +25,6 @@ import net.minecraft.dispenser.IBehaviorDispenseItem;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ISidedInventory;
@@ -38,6 +36,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
+import net.minecraft.tileentity.IHopper;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityHopper;
 import net.minecraft.tileentity.TileEntityLockable;
@@ -48,9 +47,9 @@ import net.minecraft.util.ITickable;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.items.VanillaInventoryCodeHooks;
 
 public class MultiplexingDropper extends BlockContainer implements IHasModel
 {
@@ -162,7 +161,7 @@ public class MultiplexingDropper extends BlockContainer implements IHasModel
 	
 	
 	
-	public static class ThisTileEntity extends TileEntityLockable implements ISidedInventory, ITickable
+	public static class ThisTileEntity extends TileEntityLockable implements ISidedInventory, ITickable, IHopper
 	{
 		public NonNullList<ItemStack> slots = NonNullList.<ItemStack>withSize(10, ItemStack.EMPTY);
 		private String customName = "";
@@ -193,16 +192,150 @@ public class MultiplexingDropper extends BlockContainer implements IHasModel
 		@Override
 		public void update()
 		{
-			ItemStack stack = ItemStack.EMPTY;
+		if (world.isRemote && world.getTotalWorldTime() % 4 != 0) return;
 			
-			//Main.LOGGER.info((world.isRemote ? "CLIENT" : "SERVER") + " " + (predicateItem == null ? "null" : predicateItem.getRegistryName().toString()));
-			//if (world.isRemote) ModNetWrapper.WRAPPER.sendToServer(new MessageMultiplexingDropperPredicateChange(predicateItem, pos));
+			sortOne();
+			updateHopper();
+		}
+		
+		private void updateHopper() // TODO: Add capability support
+		{
+			if (!isEmpty()) // Pushes out the bottom
+			{
+				IInventory pushInto = TileEntityHopper.getInventoryAtPosition(world, pos.getX(), pos.getY() - 1, pos.getZ());
+				
+				if (pushInto != null)
+				{
+					if (pushInto instanceof ISidedInventory) // Handle interacting with sided inventory
+					{	
+						int[] pushIntoSideSlots = ((ISidedInventory)pushInto).getSlotsForFace(EnumFacing.UP);
+						
+						for (int i : pushIntoSideSlots) // Finds mergeable slots
+						{
+							ItemStack mergeWith = pushInto.getStackInSlot(i);
+							
+							if (mergeWith.getCount() >= mergeWith.getMaxStackSize()) continue; // If we anyway won't be able to put anything since its full
+							
+							int stack = ItemsManagementHelper.findFirstMatching(this, 0, 9, new Predicate<ItemStack>() // What to merge it with in the hopper-dropper
+							{		
+								@Override
+								public boolean apply(ItemStack input)
+								{
+									return ItemsManagementHelper.areStackItemsEqual(input, mergeWith) && ((ISidedInventory)pushInto).canInsertItem(i, input, EnumFacing.UP);
+								}
+							});
+							
+							if (stack < 0) continue; // The hopper-dropper doesn't have anything to merge
+							
+							mergeWith.grow(1);
+							slots.get(stack).shrink(1);
+							markDirty();
+							break;
+						}
+					} 
+					else // Handle interacting with not sided inventory
+					{
+						ItemStack stack = slots.get(ItemsManagementHelper.findFirstNotEmpty(this, 0, 9));
+						
+						for (int i = 0; i < pushInto.getSizeInventory(); i++) // Finds mergeable slots
+						{
+							ItemStack mergeWith = pushInto.getStackInSlot(i); // TODO: Find out if it needs null-check
+							
+							if (mergeWith.getCount() >= mergeWith.getMaxStackSize()) continue; // If we anyway won't be able to put anything since its full
+							
+							int stack2 = ItemsManagementHelper.findFirstMatching(this, 0, 9, new Predicate<ItemStack>() // What to merge it with in the hopper-dropper
+							{		
+								@Override
+								public boolean apply(ItemStack input)
+								{
+									return ItemsManagementHelper.areStackItemsEqual(input, mergeWith) && ((ISidedInventory)pushInto).canInsertItem(i, input, EnumFacing.UP);
+								}
+							});
+							
+							if (stack2 < 0) continue; // The hopper-dropper doesn't have anything to merge
+							
+							mergeWith.grow(1);
+							slots.get(stack2).shrink(1);
+							markDirty();
+							break;
+						}
+					}
+				}
+			}
+			
+			if (!ItemsManagementHelper.isSidedInventoryFull(this, EnumFacing.UP)) // Pulls in from top
+			{
+				IInventory pullFrom = TileEntityHopper.getInventoryAtPosition(world, pos.getX(), pos.getY() + 1, pos.getZ());
+				
+				if (pullFrom != null)
+				{
+					if (pullFrom instanceof ISidedInventory) // Handle interacting with sided inventory
+					{	
+						int[] pushIntoSideSlots = ((ISidedInventory)pullFrom).getSlotsForFace(EnumFacing.UP);
+						
+						for (int i : pushIntoSideSlots) // Finds mergeable slots
+						{
+							ItemStack takeFrom = pullFrom.getStackInSlot(i);
+							
+							if (takeFrom == null || takeFrom.isEmpty()) continue; // If we anyway won't be able to take anything since its empty
+							
+							int stack = ItemsManagementHelper.findFirstMatching(this, 0, 9, new Predicate<ItemStack>() // What to merge it with in the hopper-dropper
+							{		
+								@Override
+								public boolean apply(ItemStack input)
+								{
+									return ItemsManagementHelper.areStackItemsEqual(input, mergeWith) && ((ISidedInventory)pullFrom).canInsertItem(i, input, EnumFacing.UP);
+								}
+							});
+							
+							if (stack < 0) continue; // The hopper-dropper doesn't have anything to merge
+							
+							mergeWith.grow(1);
+							slots.get(stack).shrink(1);
+							markDirty();
+							break;
+						}
+					} 
+					else // Handle interacting with not sided inventory
+					{
+						ItemStack stack = slots.get(ItemsManagementHelper.findFirstNotEmpty(this, 0, 9));
+						
+						for (int i = 0; i < pullFrom.getSizeInventory(); i++) // Finds mergeable slots
+						{
+							ItemStack mergeWith = pullFrom.getStackInSlot(i);
+							
+							if (mergeWith.getCount() >= mergeWith.getMaxStackSize()) continue; // If we anyway won't be able to put anything since its full
+							
+							int stack2 = ItemsManagementHelper.findFirstMatching(this, 0, 9, new Predicate<ItemStack>() // What to merge it with in the hopper-dropper
+							{		
+								@Override
+								public boolean apply(ItemStack input)
+								{
+									return ItemsManagementHelper.areStackItemsEqual(input, mergeWith) && ((ISidedInventory)pullFrom).canInsertItem(i, input, EnumFacing.UP);
+								}
+							});
+							
+							if (stack2 < 0) continue; // The hopper-dropper doesn't have anything to merge
+							
+							mergeWith.grow(1);
+							slots.get(stack2).shrink(1);
+							markDirty();
+							break;
+						}
+					}
+				}
+			}
+		}
+
+		public void sortOne()
+		{
+			ItemStack stack = ItemStack.EMPTY;
 			
 			for (int i = 0; i < 5; i++)
 			{
-				if (!slots.get(i).isEmpty() && stack.getItem() == predicateItem) // If stack matches
+				stack = slots.get(i);
+				if (!stack.isEmpty() && stack.getItem() == predicateItem) // If stack matches
 				{
-					stack = slots.get(i);
 					break;
 				}
 			}
@@ -228,19 +361,16 @@ public class MultiplexingDropper extends BlockContainer implements IHasModel
 				}
 				// Else continue searching another stack to put in
 			}
-			
 		}
 		
 		// Returns true if dropped successfully
-		public boolean tryDrop(IBlockAccess world, BlockPos pos)
-		{
- 			if (!(world instanceof World)) return false;
-			
+		public boolean tryDrop(World world, BlockPos pos)
+		{	
 			ItemStack toDrop = ItemStack.EMPTY;
 			int dropSlot = 5;
 			EnumFacing facing = world.getBlockState(pos).getValue(BlockDispenser.FACING);
 			BlockPos insertInPos = pos.offset(facing);
-			IInventory insertIn = TileEntityHopper.getInventoryAtPosition((World) world, insertInPos.getX(), insertInPos.getY(), insertInPos.getZ());
+			IInventory insertIn = TileEntityHopper.getInventoryAtPosition(world, insertInPos.getX(), insertInPos.getY(), insertInPos.getZ());
 			ItemStack remainder = ItemStack.EMPTY; // TODO: Do something with it its unused
 			
 			for (; dropSlot < slots.size(); dropSlot++)
@@ -254,7 +384,7 @@ public class MultiplexingDropper extends BlockContainer implements IHasModel
 			
 			if (insertIn == null)
 			{
-				BlockSourceImpl blocksourceimpl = new BlockSourceImpl((World) world, pos);
+				BlockSourceImpl blocksourceimpl = new BlockSourceImpl(world, pos);
 				remainder = dropBehavior.dispense(blocksourceimpl, toDrop); // Probably null pointer will be on facing	
 			}
 			else
@@ -459,7 +589,25 @@ public class MultiplexingDropper extends BlockContainer implements IHasModel
 		@Override
 		public boolean canExtractItem(int index, ItemStack stack, EnumFacing direction)
 		{
-			return true;
+			return (direction == EnumFacing.DOWN && doesSlotBelongToHopper(index)) || (direction != EnumFacing.DOWN && doesSlotBelongToDropper(index));
+		}
+
+		@Override
+		public double getXPos()
+		{
+			return pos.getX();
+		}
+
+		@Override
+		public double getYPos()
+		{
+			return pos.getY();
+		}
+
+		@Override
+		public double getZPos()
+		{
+			return pos.getZ();
 		}
 	}
 }

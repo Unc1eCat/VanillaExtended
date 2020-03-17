@@ -11,13 +11,17 @@ import com.unclecat.vanillaextended.utils.ModNetWrapper;
 import com.unclecat.vanillaextended.utils.messages.MessageMultiplexingDropperPredicateChange;
 
 import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.renderer.BlockRendererDispatcher;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.items.wrapper.PlayerInvWrapper;
+import sun.java2d.pipe.RenderingEngine;
 
 public class GuiMultiplexingDropper extends GuiContainer
 {	
@@ -55,10 +59,11 @@ public class GuiMultiplexingDropper extends GuiContainer
 	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
 	{
 		GL11.glPushMatrix();
-		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+		
 		String s = ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).getDisplayName().getUnformattedText();
 		fontRenderer.drawString(s, (width - xSize) / 2 - fontRenderer.getStringWidth(s), 3, 4210752);
-		if (((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem != null) itemRender.renderItemAndEffectIntoGUI(new ItemStack(((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem), 80, 36);
+		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+		if (((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem != null) itemRender.renderItemIntoGUI(new ItemStack(((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem), 80, 36);
 		GL11.glPopMatrix();
 	}
 	
@@ -73,7 +78,6 @@ public class GuiMultiplexingDropper extends GuiContainer
 		if (80 < mouseX && mouseX < 98 && 36 < mouseY && mouseY < 54)
 		{
 			ItemStack heldStack = plalyerInv.getItemStack();
-			
 			if (heldStack != null) ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem = heldStack.getItem();
 			else ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem = null;
 			ModNetWrapper.WRAPPER.sendToServer(new MessageMultiplexingDropperPredicateChange(((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem, ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).getPos()));
