@@ -1,25 +1,125 @@
 {
-    "parent": "block/block",
     "textures": {
-        "front": "blocks/dropper_front_horizontal",
-        "top": "blocks/furnace_top",
-        "side": "blocks/furnace_side",
-        "bottom": "uc_ve:blocks/multiplexing_dropper_bottom"
+        "particle": "uc_ve:blocks/multiplexing_dropper_front",
+        "hopper_inside": "minecraft:blocks/hopper_inside",
+        "hopper_top": "minecraft:blocks/hopper_top",
+        "multiplexing_dropper_front": "uc_ve:blocks/multiplexing_dropper_front",
+        "multiplexing_dropper_side": "uc_ve:blocks/multiplexing_dropper_side",
+        "multiplexing_dropper_bottom": "uc_ve:blocks/multiplexing_dropper_bottom",
+        "hopper_outside": "minecraft:blocks/hopper_outside"
     },
-    
-    "elements":
-    [
+    "display": {
+        "gui": {
+            "rotation": [ 30, 225, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
         {
-            "from": [ 0, 0, 0 ],
-            "to": [ 16, 16, 16 ],
-            "faces":
-            {
-                "up": { "texture": "#top", "uv": [ 0, 0, 16, 16 ] },
-                "down": { "texture": "#bottom", "uv": [ 0, 0, 16, 16 ] },
-                "north": { "texture": "#front", "uv": [ 0, 0, 16, 16 ] },
-                "south": { "texture": "#side", "uv": [ 0, 0, 16, 16 ] },
-                "west": { "texture": "#side", "uv": [ 0, 0, 16, 16 ] },
-                "east": { "texture": "#side", "uv": [ 0, 0, 16, 16 ] }
+            "name": "Bottomost",
+            "from": [ 5, 0, 5 ], 
+            "to": [ 11, 2, 11 ], 
+            "faces": {
+                "north": { "texture": "#hopper_outside", "uv": [ 0, 0, 7, 2 ] },
+                "east": { "texture": "#hopper_outside", "uv": [ 10, 0, 16, 2 ] },
+                "south": { "texture": "#hopper_outside", "uv": [ 0, 3, 6, 5 ] },
+                "west": { "texture": "#hopper_outside", "uv": [ 10, 3, 16, 5 ] },
+                "down": { "texture": "#hopper_outside", "uv": [ 5, 5, 11, 11 ] }
+            }
+        },
+        {
+            "name": "Center",
+            "from": [ 0, 2, 0 ], 
+            "to": [ 16, 11, 16 ], 
+            "faces": {
+                "north": { "texture": "#multiplexing_dropper_front", "uv": [ 0, 5, 16, 14 ] },
+                "east": { "texture": "#multiplexing_dropper_side", "uv": [ 0, 5, 16, 14 ] },
+                "south": { "texture": "#multiplexing_dropper_side", "uv": [ 0, 5, 16, 14 ] },
+                "west": { "texture": "#multiplexing_dropper_side", "uv": [ 0, 5, 16, 14 ] },
+                "up": { "texture": "#hopper_inside", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#multiplexing_dropper_bottom", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Top",
+            "from": [ 0, 11, 0 ], 
+            "to": [ 16, 16, 2 ], 
+            "faces": {
+                "north": { "texture": "#multiplexing_dropper_front", "uv": [ 0, 0, 16, 5 ] },
+                "east": { "texture": "#multiplexing_dropper_side", "uv": [ 13, 0, 15, 5 ] },
+                "south": { "texture": "#hopper_outside", "uv": [ 0, 0, 16, 5 ] },
+                "west": { "texture": "#multiplexing_dropper_side", "uv": [ 0, 0, 2, 5 ] },
+                "up": { "texture": "#hopper_top", "uv": [ 0, 0, 16, 2 ] }
+            }
+        },
+        {
+            "name": "Top",
+            "from": [ 0, 11, 14 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#hopper_outside", "uv": [ 0, 0, 16, 5 ] },
+                "east": { "texture": "#multiplexing_dropper_side", "uv": [ 0, 0, 2, 5 ] },
+                "south": { "texture": "#multiplexing_dropper_side", "uv": [ 0, 0, 16, 5 ] },
+                "west": { "texture": "#multiplexing_dropper_side", "uv": [ 13, 0, 15, 5 ] },
+                "up": { "texture": "#hopper_top", "uv": [ 0, 14, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Top 2",
+            "from": [ 0, 11, 2 ], 
+            "to": [ 2, 16, 14 ], 
+            "faces": {
+                "east": { "texture": "#hopper_outside", "uv": [ 2, 0, 14, 5 ] },
+                "west": { "texture": "#multiplexing_dropper_side", "uv": [ 3, 0, 15, 5 ] },
+                "up": { "texture": "#hopper_top", "uv": [ 0, 2, 2, 14 ] }
+            }
+        },
+        {
+            "name": "Top 2",
+            "from": [ 14, 11, 2 ], 
+            "to": [ 16, 16, 14 ], 
+            "faces": {
+                "east": { "texture": "#multiplexing_dropper_side", "uv": [ 3, 0, 15, 5 ] },
+                "west": { "texture": "#hopper_outside", "uv": [ 3, 0, 15, 5 ] },
+                "up": { "texture": "#hopper_top", "uv": [ 14, 2, 16, 14 ] }
+            }
+        },
+        {
+            "name": "Beard",
+            "from": [ 4, 1, 0 ], 
+            "to": [ 12, 2, 1 ], 
+            "faces": {
+                "north": { "texture": "#multiplexing_dropper_front", "uv": [ 4, 14, 12, 15 ] },
+                "east": { "texture": "#multiplexing_dropper_front", "uv": [ 4, 15, 5, 14 ] },
+                "south": { "texture": "#multiplexing_dropper_front", "uv": [ 4, 14, 12, 15 ] },
+                "west": { "texture": "#multiplexing_dropper_front", "uv": [ 11, 14, 12, 15 ] },
+                "down": { "texture": "#multiplexing_dropper_front", "uv": [ 4, 14, 12, 15 ] }
             }
         }
     ]

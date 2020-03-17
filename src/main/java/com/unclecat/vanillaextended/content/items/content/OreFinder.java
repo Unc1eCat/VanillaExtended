@@ -178,7 +178,7 @@ public class OreFinder extends ItemBase
 	
 	
 	@Override
-	public void registerModels() // TODO: Remove and remember that you don't have to register models used in model override's
+	public void registerModels()
 	{
 		super.registerModels();
 	}	

@@ -59,7 +59,6 @@ public class GuiMultiplexingDropper extends GuiContainer
 	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
 	{
 		GL11.glPushMatrix();
-		
 		String s = ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).getDisplayName().getUnformattedText();
 		fontRenderer.drawString(s, (width - xSize) / 2 - fontRenderer.getStringWidth(s), 3, 4210752);
 		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
@@ -81,7 +80,6 @@ public class GuiMultiplexingDropper extends GuiContainer
 			if (heldStack != null) ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem = heldStack.getItem();
 			else ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem = null;
 			ModNetWrapper.WRAPPER.sendToServer(new MessageMultiplexingDropperPredicateChange(((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem, ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).getPos()));
-			((MultiplexingDropper.ThisTileEntity)multiplexingDropper).markDirty();
 		}
 	}
 }

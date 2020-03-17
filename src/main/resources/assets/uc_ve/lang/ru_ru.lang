@@ -26,6 +26,7 @@ enchantment.wandspell_builder=Заклинание строительство
 enchantment.wandspell_force_shield=Заклинание энергетический купол
 enchantment.wandspell_luminosity=Заклинание осветитель
 enchantment.wandspell_experience_placer=Заклинание сжиматель опыта 
+enchantment.wandspell_quantum_potion=Заклинание квантогового зелья
 
 
 # Blocks(tiles)

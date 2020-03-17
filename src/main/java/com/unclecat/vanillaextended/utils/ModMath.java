@@ -40,7 +40,7 @@ public class ModMath
         }
         
         player.experience -= amount / (float)player.xpBarCap();
-//        player.sendMessage(new TextComponentString("Level:  " + player.experienceLevel + "\nExperience in exp bar:  " + player.experience + "\nTotal experience:  " + player.experienceTotal + "\n")); // TODO: Remove
+//        player.sendMessage(new TextComponentString("Level:  " + player.experienceLevel + "\nExperience in exp bar:  " + player.experience + "\nTotal experience:  " + player.experienceTotal + "\n"));
 	}
 	
 	

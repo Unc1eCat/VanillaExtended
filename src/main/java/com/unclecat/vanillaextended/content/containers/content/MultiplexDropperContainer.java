@@ -98,7 +98,7 @@ public class MultiplexDropperContainer extends Container
 			{
 				if (((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem != null && ((MultiplexingDropper.ThisTileEntity)multiplexingDropper).predicateItem == slotStack.getItem())
 				{
-					if (!mergeItemStack(slotStack, 5, 9, false))
+					if (!mergeItemStack(slotStack, 5, 10, false))
 					{
 						return ItemStack.EMPTY;
 					}

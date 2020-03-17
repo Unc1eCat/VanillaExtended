@@ -153,26 +153,24 @@ public class Main
 	// 0.2 version
 	// TODO: Add saving(economy) and speed boost enchantments for obsidian wand
 	// TODO: Usage for Cloth and Feather block
-	// TODO: Multiplexing dropper that stores specific amount of specific item
-	// TODO: Distributing hopper 
+	// DONE: Dropper-hopper that stores specific amount of specific item 
 	// TODO: Parachute 
 	// DONE: Quantum potion spell that drinks gives player potion effects from potion held in off-hand but doesn't consumes the potion
 	// DONE: Ore finder
 	// TODO: Nether furnace working on Soulsand
-	// TODO: Tile door
 	// TODO: Door and chest lock and key
 	// DONE: Chargeable pickaxe that charges for some block and breaks it faster than other which it breaks extremely slow
-	// TODO: Spectral sword
+	// TODO: Spectral sword with own particles
 	// TODO: Lightning spell
 	// TODO: Redstone indicator - displays redstone power  
-	// TODO: Quantum item stacks(enchantment) that can be stored in multiple inventories and perform actions but affected item will be onlu one
 	// TODO: Experience disorder potion effect that slowly consumes experience
 	
 	// Maybe...
 	// Redstone crossway or something like this
 	
-	
-	// Oh I should've set up Git
+	// 0.3 version
+	// TODO: Quantum item stacks(enchantment) that can be stored in multiple inventories and perform actions but affected item will be onlu one
+	// TODO: Tile door
 	
 	@SubscribeEvent
 	public void onCreeperExplosion(ExplosionEvent event)

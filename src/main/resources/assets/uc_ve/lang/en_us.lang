@@ -27,7 +27,8 @@ enchantment.wandspell_soul_extractor=Soul extractor spell
 enchantment.wandspell_builder=Builder spell
 enchantment.wandspell_force_shield=Force shield spell
 enchantment.wandspell_luminosity=Luminosity spell
-enchantment.wandspell_experience_placer=Experience compressor  
+enchantment.wandspell_experience_placer=Experience compressor 
+enchantment.wandspell_quantum_potion=Quantum potion  
 
 
 # Blocks(tiles)
